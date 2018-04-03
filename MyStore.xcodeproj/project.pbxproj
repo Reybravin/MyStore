@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5677B5C4207417F6006BE89C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5677B5C3207417F6006BE89C /* Assets.xcassets */; };
+		5677B5C820741DCD006BE89C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5677B5C720741DCD006BE89C /* Constants.swift */; };
 		56EC1CBF207403F200F8E0DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56EC1CBE207403F100F8E0DD /* Main.storyboard */; };
 		56EC1CC420740BBE00F8E0DD /* CustomButton copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC1CC320740BBE00F8E0DD /* CustomButton copy.swift */; };
 		56F6FB832073FF28006DA338 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 56F6FB822073FF28006DA338 /* Assets */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		5654CDA52072D8CB0013561F /* MyStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5654CDB42072D8CB0013561F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5677B5C3207417F6006BE89C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5677B5C720741DCD006BE89C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		56EC1CBE207403F100F8E0DD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		56EC1CC320740BBE00F8E0DD /* CustomButton copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CustomButton copy.swift"; sourceTree = "<group>"; };
 		56F6FB822073FF28006DA338 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
@@ -81,15 +85,16 @@
 		5654CDA72072D8CB0013561F /* MyStore */ = {
 			isa = PBXGroup;
 			children = (
-				56EC1CC220740A4100F8E0DD /* Controllers */,
+				5677B5C620741DBF006BE89C /* Utilities */,
+				5677B5C520741D68006BE89C /* Views */,
 				56EC1CC1207409B400F8E0DD /* Extensions */,
+				56EC1CC220740A4100F8E0DD /* Controllers */,
 				56EC1CC02074097500F8E0DD /* Views */,
 				56EC1CBE207403F100F8E0DD /* Main.storyboard */,
 				56F6FB932073FF5B006DA338 /* AuthStoryboard.storyboard */,
 				56F6FB942073FF5B006DA338 /* Animal.swift */,
 				56F6FB902073FF5B006DA338 /* AnimalCell.swift */,
 				56F6FB882073FF5A006DA338 /* AppDelegate.swift */,
-				56F6FB8B2073FF5A006DA338 /* AuthViewController.swift */,
 				56F6FB892073FF5A006DA338 /* Category.swift */,
 				56F6FB952073FF5B006DA338 /* CenterViewController.swift */,
 				56F6FB8A2073FF5A006DA338 /* CenterViewControllerDelegate.swift */,
@@ -97,16 +102,31 @@
 				56F6FB8D2073FF5A006DA338 /* DataService.swift */,
 				56F6FB922073FF5B006DA338 /* LaunchScreen.xib */,
 				56F6FB8F2073FF5B006DA338 /* RegistrationCell.swift */,
-				56F6FB912073FF5B006DA338 /* RegistrationViewController.swift */,
 				56F6FB8E2073FF5B006DA338 /* SidePanelViewController.swift */,
 				56F6FB962073FF5B006DA338 /* SidePanelViewControllerDelegate.swift */,
 				56EC1CC320740BBE00F8E0DD /* CustomButton copy.swift */,
-				56F6FB842073FF3C006DA338 /* Base.lproj */,
 				56F6FB822073FF28006DA338 /* Assets */,
 				5654CDB42072D8CB0013561F /* Info.plist */,
 				56F6FB872073FF59006DA338 /* MyStore-Bridging-Header.h */,
+				5677B5C3207417F6006BE89C /* Assets.xcassets */,
 			);
 			path = MyStore;
+			sourceTree = "<group>";
+		};
+		5677B5C520741D68006BE89C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		5677B5C620741DBF006BE89C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5677B5C720741DCD006BE89C /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		56EC1CC02074097500F8E0DD /* Views */ = {
@@ -126,17 +146,11 @@
 		56EC1CC220740A4100F8E0DD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				56F6FB8B2073FF5A006DA338 /* AuthViewController.swift */,
+				56F6FB912073FF5B006DA338 /* RegistrationViewController.swift */,
 			);
 			name = Controllers;
 			path = "New Group";
-			sourceTree = "<group>";
-		};
-		56F6FB842073FF3C006DA338 /* Base.lproj */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Base.lproj;
-			path = Assets/Base.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +217,7 @@
 				56F6FB832073FF28006DA338 /* Assets in Resources */,
 				56F6FBA22073FF5B006DA338 /* AuthStoryboard.storyboard in Resources */,
 				56EC1CBF207403F200F8E0DD /* Main.storyboard in Resources */,
+				5677B5C4207417F6006BE89C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +233,7 @@
 				56F6FB972073FF5B006DA338 /* AppDelegate.swift in Sources */,
 				56F6FB9B2073FF5B006DA338 /* ContainerViewController.swift in Sources */,
 				56F6FBA52073FF5B006DA338 /* SidePanelViewControllerDelegate.swift in Sources */,
+				5677B5C820741DCD006BE89C /* Constants.swift in Sources */,
 				56F6FB9C2073FF5B006DA338 /* DataService.swift in Sources */,
 				56EC1CC420740BBE00F8E0DD /* CustomButton copy.swift in Sources */,
 				56F6FBA02073FF5B006DA338 /* RegistrationViewController.swift in Sources */,
@@ -281,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -332,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -344,9 +360,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VL3ZN4Q3MB;
+				DEVELOPMENT_TEAM = 5RTAWRP7KM;
 				INFOPLIST_FILE = MyStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sachuk.MyStore;
@@ -362,9 +379,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VL3ZN4Q3MB;
+				DEVELOPMENT_TEAM = 5RTAWRP7KM;
 				INFOPLIST_FILE = MyStore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sachuk.MyStore;

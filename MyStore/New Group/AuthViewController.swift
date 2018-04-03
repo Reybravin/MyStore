@@ -13,6 +13,7 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    //MARK: - Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,7 +21,7 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
         passwordTextField.delegate = self
     
     }
-
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -28,6 +29,13 @@ class AuthViewController: UIViewController, UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    @IBAction func loginBtnTapped(_ sender: Any) {
+        performSegue(withIdentifier: AUTH_TO_REGISTER, sender: self)
+    }
+    @IBAction func facebookBtnTapped(_ sender: Any) {
+        performSegue(withIdentifier: AUTH_TO_REGISTER, sender: self)
     }
     
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wZb-Fk-7bJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PsW-Ib-EQo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -183,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J4t-sY-Xte" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-112.8" y="380.95952023988008"/>
+            <point key="canvasLocation" x="-34" y="215"/>
         </scene>
         <!--Right View Controller-->
         <scene sceneID="DHZ-J2-coc">
@@ -283,7 +283,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYx-Cd-cuo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1367.2" y="381.85907046476763"/>
+            <point key="canvasLocation" x="1345" y="215"/>
         </scene>
         <!--Auth View Controller-->
         <scene sceneID="KmL-lE-3dY">
@@ -312,22 +312,22 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="GL1-WB-pqX">
-                                <rect key="frame" x="73.5" y="300" width="227" height="30"/>
+                                <rect key="frame" x="36" y="300" width="302" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AsP-HZ-DOu">
-                                        <rect key="frame" x="0.0" y="0.0" width="71" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="146" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <state key="normal" title="Button" image="ic_check_box_unchecked">
+                                        <state key="normal" title="Показать пароль" image="ic_checkbox_unchecked">
                                             <color key="titleColor" red="0.0" green="0.47934520244598389" blue="0.99908632040023804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0D6-2f-Hza">
-                                        <rect key="frame" x="111" y="0.0" width="116" height="30"/>
+                                        <rect key="frame" x="186" y="0.0" width="116" height="30"/>
                                         <state key="normal" title="Забыли пароль?"/>
                                     </button>
                                 </subviews>
@@ -354,9 +354,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="wZb-Fk-7bJ" kind="showDetail" id="INO-B8-gUz">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <action selector="loginBtnTapped:" destination="q6C-eL-taQ" eventType="touchUpInside" id="BEi-j4-7Ei"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Войти через соц. сеть" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBb-fV-2wP">
@@ -383,6 +381,9 @@
                                         <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="facebookBtnTapped:" destination="q6C-eL-taQ" eventType="touchUpInside" id="YE8-T1-Jpr"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WDQ-5l-HBs">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -422,13 +423,13 @@
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="H4G-5d-xes">
                         <leftBarButtonItems>
-                            <barButtonItem title="Item" image="ic_menu" id="YML-A2-8Lo"/>
+                            <barButtonItem title="Item" image="ic_menu_new" id="YML-A2-8Lo"/>
                             <barButtonItem title="Вход" id="iVj-1n-tdW">
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </barButtonItem>
                         </leftBarButtonItems>
                         <rightBarButtonItems>
-                            <barButtonItem title="Item" image="ic_cart" id="Ty8-AV-jj8"/>
+                            <barButtonItem title="Item" image="ic_cart_new" id="Ty8-AV-jj8"/>
                             <barButtonItem systemItem="search" id="lf7-8a-vPV"/>
                         </rightBarButtonItems>
                     </navigationItem>
@@ -436,29 +437,12 @@
                     <connections>
                         <outlet property="loginTextField" destination="Sde-ur-vBe" id="FDQ-wl-zch"/>
                         <outlet property="passwordTextField" destination="Sde-ur-vBe" id="9k4-o4-2k3"/>
+                        <segue destination="wZb-Fk-7bJ" kind="show" identifier="AuthToRegisterSegue" id="f6m-6r-bQL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gvU-ss-KFA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1459" y="382"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="hLW-gv-ZqW">
-            <objects>
-                <viewController id="wM8-ic-6zz" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dUA-h0-kte"/>
-                        <viewControllerLayoutGuide type="bottom" id="tMB-bf-Vbx"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2Ze-sk-FdD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="192-AH-3mr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1437" y="1164"/>
+            <point key="canvasLocation" x="-1506" y="382"/>
         </scene>
         <!--Registration View Controller-->
         <scene sceneID="c51-TF-bAA">
@@ -469,10 +453,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3yb-vx-8g8">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RegistrationCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="sPl-xz-mUB" customClass="RegistrationCell" customModule="MyStore" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RegistrationCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RegistrationCell" id="sPl-xz-mUB" customClass="RegistrationCell" customModule="MyStore" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sPl-xz-mUB" id="EzT-s7-qGz">
@@ -485,7 +469,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="pgd-zg-htN">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="pgd-zg-htN">
                                                     <rect key="frame" x="335" y="10" width="25" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="Mmm-q7-N5s"/>
@@ -511,11 +495,11 @@
                                 <items>
                                     <navigationItem id="P3L-zZ-tvk">
                                         <leftBarButtonItems>
-                                            <barButtonItem image="ic_cart" id="yF4-az-CgR"/>
+                                            <barButtonItem title="Item" image="ic_menu_new" id="bxZ-Qw-cB9"/>
                                             <barButtonItem title="Регистрация" id="9Fx-Dz-hEk"/>
                                         </leftBarButtonItems>
                                         <rightBarButtonItems>
-                                            <barButtonItem image="ic_menu" id="Isr-i4-DVo"/>
+                                            <barButtonItem title="Item" image="ic_cart_new" id="5la-jL-0Wf"/>
                                             <barButtonItem systemItem="search" id="tLf-XF-ZfT"/>
                                         </rightBarButtonItems>
                                     </navigationItem>
@@ -534,6 +518,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eYa-HK-e85"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="3yb-vx-8g8" id="xV2-rL-46R"/>
+                        <segue destination="vXZ-lx-hvc" kind="show" identifier="RegistrationToHomeSegue" id="pRQ-bt-f8Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AYS-Y8-C3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -555,16 +543,16 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xvl-x2-7XF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1938" y="382"/>
+            <point key="canvasLocation" x="-2191" y="382"/>
         </scene>
     </scenes>
     <resources>
         <image name="ID-100113060.jpg" width="400" height="266"/>
         <image name="ID-100137.jpg" width="400" height="300"/>
         <image name="ID-10029135.jpg" width="400" height="359"/>
-        <image name="ic_cart" width="24" height="24"/>
-        <image name="ic_check_box_unchecked" width="25" height="25"/>
-        <image name="ic_menu" width="25" height="25"/>
-        <image name="ic_right_arrow" width="24" height="24"/>
+        <image name="ic_arrow_right" width="24" height="24"/>
+        <image name="ic_cart_new" width="24" height="24"/>
+        <image name="ic_checkbox_unchecked" width="25" height="25"/>
+        <image name="ic_menu_new" width="25" height="25"/>
     </resources>
 </document>
