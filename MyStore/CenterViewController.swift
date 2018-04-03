@@ -29,31 +29,95 @@
 import UIKit
 
 class CenterViewController: UIViewController {
-  
-  @IBOutlet weak private var imageView: UIImageView!
-  @IBOutlet weak private var titleLabel: UILabel!
-  @IBOutlet weak private var creatorLabel: UILabel!
-  
-  var delegate: CenterViewControllerDelegate?
-  
-  // MARK: Button actions
-  @IBAction func kittiesTapped(_ sender: Any) {
-    delegate?.toggleLeftPanel?()
-  }
-  
-  @IBAction func puppiesTapped(_ sender: Any) {
-    delegate?.toggleRightPanel?()
-  }
+    
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak private var imageView: UIImageView!
+    @IBOutlet weak private var titleLabel: UILabel!
+    @IBOutlet weak private var creatorLabel: UILabel!
+    
+    var delegate: CenterViewControllerDelegate?
+    
+    var categories = [String]()
+    
+    override func viewDidLoad() {
+        categories = getCategories()
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    func getCategories() -> [String] {
+        let category = "Category"
+        var categories = [String]()
+        for i in 0..<11 {
+            categories.append("\(category)" + " " + "\(i)")
+        }
+        print(categories)
+        return categories
+    }
+    
+    // MARK: Button actions
+    @IBAction func kittiesTapped(_ sender: Any) {
+        delegate?.toggleLeftPanel?()
+    }
+    
+    @IBAction func puppiesTapped(_ sender: Any) {
+        delegate?.toggleRightPanel?()
+    }
+}
+
+//MARK: - TableView
+extension CenterViewController: UITableViewDelegate, UITableViewDataSource  {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return categories.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell", for: indexPath) as? HomeCell else { return UITableViewCell() }
+        
+        cell.label.text = categories[indexPath.row]
+        return cell
+    }
+    
+    
 }
 
 // MARK: - SidePanelViewControllerDelegate
 extension CenterViewController: SidePanelViewControllerDelegate {
-  
-  func didSelectAnimal(_ animal: Animal) {
-    imageView.image = animal.image
-    titleLabel.text = animal.title
-    creatorLabel.text = animal.creator
     
-    delegate?.collapseSidePanels?()
-  }
+    func didSelectAnimal(_ animal: Animal) {
+        imageView.image = animal.image
+        titleLabel.text = animal.title
+        creatorLabel.text = animal.creator
+        
+        delegate?.collapseSidePanels?()
+    }
 }
+  
+//  @IBOutlet weak private var imageView: UIImageView!
+//  @IBOutlet weak private var titleLabel: UILabel!
+//  @IBOutlet weak private var creatorLabel: UILabel!
+//
+//  var delegate: CenterViewControllerDelegate?
+//
+//  // MARK: Button actions
+//  @IBAction func kittiesTapped(_ sender: Any) {
+//    delegate?.toggleLeftPanel?()
+//  }
+//
+//  @IBAction func puppiesTapped(_ sender: Any) {
+//    delegate?.toggleRightPanel?()
+//  }
+//}
+//
+//// MARK: - SidePanelViewControllerDelegate
+//extension CenterViewController: SidePanelViewControllerDelegate {
+//
+//  func didSelectAnimal(_ animal: Animal) {
+//    imageView.image = animal.image
+//    titleLabel.text = animal.title
+//    creatorLabel.text = animal.creator
+//
+//    delegate?.collapseSidePanels?()
+//  }
+//}
+

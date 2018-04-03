@@ -24,42 +24,85 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Jumping School" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMC-FW-BQ2">
-                                <rect key="frame" x="239" y="433" width="121" height="20"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Vlado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2r-S3-GSP">
-                                <rect key="frame" x="282" y="461" width="37" height="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vlado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2r-S3-GSP">
+                                <rect key="frame" x="168" y="200" width="40" height="18"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ID-10029135.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5QZ-bA-oHp">
-                                <rect key="frame" x="0.0" y="64" width="375" height="350"/>
+                                <rect key="frame" x="-12.5" y="64" width="400" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="350" id="dKw-DS-MxB"/>
+                                    <constraint firstAttribute="height" constant="100" id="0UN-CZ-cXP"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Images courtesy of FreeDigitalPhotos.net" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scA-1W-OzC">
-                                <rect key="frame" x="194" y="576" width="213" height="14"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jumping School" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMC-FW-BQ2">
+                                <rect key="frame" x="123.5" y="172" width="128.5" height="20"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WaG-AD-rAd">
+                                <rect key="frame" x="0.0" y="226" width="375" height="397"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeCell" id="xwH-bS-3Nl" customClass="HomeCell" customModule="MyStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xwH-bS-3Nl" id="68A-Ei-CfB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_image" translatesAutoresizingMaskIntoConstraints="NO" id="YDn-ji-YEu">
+                                                    <rect key="frame" x="15" y="7" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="CLI-uQ-skN"/>
+                                                        <constraint firstAttribute="width" constant="30" id="nL9-xc-ujz"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDe-Bb-nye">
+                                                    <rect key="frame" x="49" y="12" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="vDt-Kb-BXL">
+                                                    <rect key="frame" x="335" y="10" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="imq-sd-4Ft"/>
+                                                        <constraint firstAttribute="height" constant="25" id="xUj-Y1-PkR"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="YDn-ji-YEu" firstAttribute="centerY" secondItem="68A-Ei-CfB" secondAttribute="centerY" id="CqA-6b-huh"/>
+                                                <constraint firstItem="YDn-ji-YEu" firstAttribute="leading" secondItem="68A-Ei-CfB" secondAttribute="leading" constant="15" id="N3X-PU-TwF"/>
+                                                <constraint firstItem="RDe-Bb-nye" firstAttribute="centerY" secondItem="YDn-ji-YEu" secondAttribute="centerY" id="NQh-Jh-btu"/>
+                                                <constraint firstItem="vDt-Kb-BXL" firstAttribute="centerY" secondItem="RDe-Bb-nye" secondAttribute="centerY" id="b2Q-9e-tCa"/>
+                                                <constraint firstItem="RDe-Bb-nye" firstAttribute="leading" secondItem="YDn-ji-YEu" secondAttribute="trailing" constant="4" id="eMz-rm-V6y"/>
+                                                <constraint firstAttribute="trailing" secondItem="vDt-Kb-BXL" secondAttribute="trailing" constant="15" id="rTv-Q1-lYT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryImage" destination="YDn-ji-YEu" id="ALW-XX-22g"/>
+                                            <outlet property="label" destination="RDe-Bb-nye" id="hgr-4g-m1B"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5QZ-bA-oHp" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="4Lp-KK-goy"/>
-                            <constraint firstAttribute="centerX" secondItem="RMC-FW-BQ2" secondAttribute="centerX" id="9fL-10-c9s"/>
-                            <constraint firstItem="5QZ-bA-oHp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="MCH-FJ-3b5"/>
-                            <constraint firstAttribute="centerX" secondItem="scA-1W-OzC" secondAttribute="centerX" id="OFe-vj-3F1"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="scA-1W-OzC" secondAttribute="bottom" constant="10" id="byZ-dk-mfX"/>
-                            <constraint firstAttribute="trailing" secondItem="5QZ-bA-oHp" secondAttribute="trailing" id="hlJ-6P-jnv"/>
-                            <constraint firstItem="t2r-S3-GSP" firstAttribute="top" secondItem="RMC-FW-BQ2" secondAttribute="bottom" constant="8" id="rmG-yf-gyZ"/>
-                            <constraint firstAttribute="centerX" secondItem="t2r-S3-GSP" secondAttribute="centerX" id="uGw-Tj-zhF"/>
-                            <constraint firstItem="RMC-FW-BQ2" firstAttribute="top" secondItem="5QZ-bA-oHp" secondAttribute="bottom" constant="19" id="vIa-Dl-gbe"/>
+                            <constraint firstItem="RMC-FW-BQ2" firstAttribute="top" secondItem="5QZ-bA-oHp" secondAttribute="bottom" constant="8" id="15g-i9-a47"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="WaG-AD-rAd" secondAttribute="bottom" id="2op-d1-XYh"/>
+                            <constraint firstItem="t2r-S3-GSP" firstAttribute="top" secondItem="RMC-FW-BQ2" secondAttribute="bottom" constant="8" id="Aa2-CI-1wX"/>
+                            <constraint firstItem="5QZ-bA-oHp" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="CmP-7W-Cig"/>
+                            <constraint firstItem="RMC-FW-BQ2" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="D4q-OE-Jkl"/>
+                            <constraint firstItem="5QZ-bA-oHp" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Iue-FX-Q0U"/>
+                            <constraint firstItem="WaG-AD-rAd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Lmt-aI-CeA"/>
+                            <constraint firstAttribute="trailing" secondItem="WaG-AD-rAd" secondAttribute="trailing" id="W02-cd-l1q"/>
+                            <constraint firstItem="WaG-AD-rAd" firstAttribute="top" secondItem="t2r-S3-GSP" secondAttribute="bottom" constant="8" id="cd5-cD-BvJ"/>
+                            <constraint firstItem="t2r-S3-GSP" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="oKZ-d7-quj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Slide Out Tutorial" id="Eg8-MT-Krf">
@@ -78,6 +121,7 @@
                     <connections>
                         <outlet property="creatorLabel" destination="t2r-S3-GSP" id="Pqh-qE-HCq"/>
                         <outlet property="imageView" destination="5QZ-bA-oHp" id="xCn-vP-0gO"/>
+                        <outlet property="tableView" destination="WaG-AD-rAd" id="2gK-AM-yCc"/>
                         <outlet property="titleLabel" destination="RMC-FW-BQ2" id="9an-FH-eW0"/>
                     </connections>
                 </viewController>
@@ -550,6 +594,7 @@
         <image name="ID-100113060.jpg" width="400" height="266"/>
         <image name="ID-100137.jpg" width="400" height="300"/>
         <image name="ID-10029135.jpg" width="400" height="359"/>
+        <image name="default_image" width="20" height="20"/>
         <image name="ic_arrow_right" width="24" height="24"/>
         <image name="ic_cart_new" width="24" height="24"/>
         <image name="ic_checkbox_unchecked" width="25" height="25"/>

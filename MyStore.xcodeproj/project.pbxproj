@@ -9,19 +9,20 @@
 /* Begin PBXBuildFile section */
 		5677B5C4207417F6006BE89C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5677B5C3207417F6006BE89C /* Assets.xcassets */; };
 		5677B5C820741DCD006BE89C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5677B5C720741DCD006BE89C /* Constants.swift */; };
+		56981BB520742C3F004B8FB7 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56981BB320742C3F004B8FB7 /* RegistrationViewController.swift */; };
+		56981BB620742C3F004B8FB7 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56981BB420742C3F004B8FB7 /* AuthViewController.swift */; };
+		56981BBA20742CB5004B8FB7 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56981BB920742CB5004B8FB7 /* HomeCell.swift */; };
 		56EC1CBF207403F200F8E0DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56EC1CBE207403F100F8E0DD /* Main.storyboard */; };
 		56EC1CC420740BBE00F8E0DD /* CustomButton copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC1CC320740BBE00F8E0DD /* CustomButton copy.swift */; };
 		56F6FB832073FF28006DA338 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 56F6FB822073FF28006DA338 /* Assets */; };
 		56F6FB972073FF5B006DA338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6FB882073FF5A006DA338 /* AppDelegate.swift */; };
 		56F6FB982073FF5B006DA338 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6FB892073FF5A006DA338 /* Category.swift */; };
 		56F6FB992073FF5B006DA338 /* CenterViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6FB8A2073FF5A006DA338 /* CenterViewControllerDelegate.swift */; };
-		56F6FB9A2073FF5B006DA338 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6FB8B2073FF5A006DA338 /* AuthViewController.swift */; };
 		56F6FB9B2073FF5B006DA338 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6FB8C2073FF5A006DA338 /* ContainerViewController.swift */; };
 		56F6FB9C2073FF5B006DA338 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6FB8D2073FF5A006DA338 /* DataService.swift */; };
 		56F6FB9D2073FF5B006DA338 /* SidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6FB8E2073FF5B006DA338 /* SidePanelViewController.swift */; };
 		56F6FB9E2073FF5B006DA338 /* RegistrationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6FB8F2073FF5B006DA338 /* RegistrationCell.swift */; };
 		56F6FB9F2073FF5B006DA338 /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6FB902073FF5B006DA338 /* AnimalCell.swift */; };
-		56F6FBA02073FF5B006DA338 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6FB912073FF5B006DA338 /* RegistrationViewController.swift */; };
 		56F6FBA12073FF5B006DA338 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56F6FB922073FF5B006DA338 /* LaunchScreen.xib */; };
 		56F6FBA22073FF5B006DA338 /* AuthStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F6FB932073FF5B006DA338 /* AuthStoryboard.storyboard */; };
 		56F6FBA32073FF5B006DA338 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6FB942073FF5B006DA338 /* Animal.swift */; };
@@ -34,6 +35,9 @@
 		5654CDB42072D8CB0013561F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5677B5C3207417F6006BE89C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5677B5C720741DCD006BE89C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		56981BB320742C3F004B8FB7 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegistrationViewController.swift; path = MyStore/Controllers/RegistrationViewController.swift; sourceTree = SOURCE_ROOT; };
+		56981BB420742C3F004B8FB7 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthViewController.swift; path = MyStore/Controllers/AuthViewController.swift; sourceTree = SOURCE_ROOT; };
+		56981BB920742CB5004B8FB7 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		56EC1CBE207403F100F8E0DD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		56EC1CC320740BBE00F8E0DD /* CustomButton copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CustomButton copy.swift"; sourceTree = "<group>"; };
 		56F6FB822073FF28006DA338 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
@@ -41,13 +45,11 @@
 		56F6FB882073FF5A006DA338 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56F6FB892073FF5A006DA338 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		56F6FB8A2073FF5A006DA338 /* CenterViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewControllerDelegate.swift; sourceTree = "<group>"; };
-		56F6FB8B2073FF5A006DA338 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		56F6FB8C2073FF5A006DA338 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		56F6FB8D2073FF5A006DA338 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		56F6FB8E2073FF5B006DA338 /* SidePanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePanelViewController.swift; sourceTree = "<group>"; };
 		56F6FB8F2073FF5B006DA338 /* RegistrationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationCell.swift; sourceTree = "<group>"; };
 		56F6FB902073FF5B006DA338 /* AnimalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
-		56F6FB912073FF5B006DA338 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		56F6FB922073FF5B006DA338 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		56F6FB932073FF5B006DA338 /* AuthStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AuthStoryboard.storyboard; sourceTree = "<group>"; };
 		56F6FB942073FF5B006DA338 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
@@ -86,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				5677B5C620741DBF006BE89C /* Utilities */,
-				5677B5C520741D68006BE89C /* Views */,
 				56EC1CC1207409B400F8E0DD /* Extensions */,
 				56EC1CC220740A4100F8E0DD /* Controllers */,
 				56EC1CC02074097500F8E0DD /* Views */,
@@ -113,14 +114,6 @@
 			path = MyStore;
 			sourceTree = "<group>";
 		};
-		5677B5C520741D68006BE89C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Views;
-			path = "New Group1";
-			sourceTree = "<group>";
-		};
 		5677B5C620741DBF006BE89C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +125,7 @@
 		56EC1CC02074097500F8E0DD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				56981BB920742CB5004B8FB7 /* HomeCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -146,8 +140,8 @@
 		56EC1CC220740A4100F8E0DD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				56F6FB8B2073FF5A006DA338 /* AuthViewController.swift */,
-				56F6FB912073FF5B006DA338 /* RegistrationViewController.swift */,
+				56981BB420742C3F004B8FB7 /* AuthViewController.swift */,
+				56981BB320742C3F004B8FB7 /* RegistrationViewController.swift */,
 			);
 			name = Controllers;
 			path = "New Group";
@@ -229,19 +223,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				56F6FBA32073FF5B006DA338 /* Animal.swift in Sources */,
-				56F6FB9A2073FF5B006DA338 /* AuthViewController.swift in Sources */,
 				56F6FB972073FF5B006DA338 /* AppDelegate.swift in Sources */,
 				56F6FB9B2073FF5B006DA338 /* ContainerViewController.swift in Sources */,
 				56F6FBA52073FF5B006DA338 /* SidePanelViewControllerDelegate.swift in Sources */,
 				5677B5C820741DCD006BE89C /* Constants.swift in Sources */,
 				56F6FB9C2073FF5B006DA338 /* DataService.swift in Sources */,
+				56981BB520742C3F004B8FB7 /* RegistrationViewController.swift in Sources */,
 				56EC1CC420740BBE00F8E0DD /* CustomButton copy.swift in Sources */,
-				56F6FBA02073FF5B006DA338 /* RegistrationViewController.swift in Sources */,
 				56F6FB9E2073FF5B006DA338 /* RegistrationCell.swift in Sources */,
 				56F6FB9D2073FF5B006DA338 /* SidePanelViewController.swift in Sources */,
 				56F6FB982073FF5B006DA338 /* Category.swift in Sources */,
 				56F6FBA42073FF5B006DA338 /* CenterViewController.swift in Sources */,
+				56981BBA20742CB5004B8FB7 /* HomeCell.swift in Sources */,
 				56F6FB9F2073FF5B006DA338 /* AnimalCell.swift in Sources */,
+				56981BB620742C3F004B8FB7 /* AuthViewController.swift in Sources */,
 				56F6FB992073FF5B006DA338 /* CenterViewControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
