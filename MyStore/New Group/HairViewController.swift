@@ -10,26 +10,51 @@ import UIKit
 
 class HairViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var data = ["Уход за волосами", "Наращивание волос", "Парики", "Украшения для волос"]
+    var cellIdentifier = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let vc = segue.destination as? CategoryProductsViewController {
+            //
+            vc.products = sender as? [Product] ?? [Product]()
+        }
     }
-    */
-
+    
 }
+
+extension HairViewController: UITableViewDelegate, UITableViewDataSource{
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? CosmeticsCell else { return UITableViewCell() }
+        
+        cell.label.text = ""
+        
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sender = data[indexPath.row]
+        performSegue(withIdentifier: "", sender: sender)
+    }
+}
+

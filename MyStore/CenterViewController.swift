@@ -63,6 +63,12 @@ class CenterViewController: UIViewController {
     @IBAction func puppiesTapped(_ sender: Any) {
         delegate?.toggleRightPanel?()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? CosmeticsViewController {
+            vc.data = sender as? [String] ?? [String]()
+        }
+    }
 }
 
 //MARK: - TableView
@@ -76,6 +82,11 @@ extension CenterViewController: UITableViewDelegate, UITableViewDataSource  {
         
         cell.label.text = categories[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sender = categories[indexPath.row]
+        performSegue(withIdentifier: HOME_TO_COSMETICS, sender: sender)
     }
     
     

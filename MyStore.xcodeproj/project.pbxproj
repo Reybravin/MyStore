@@ -15,10 +15,11 @@
 		56CDB9C02079592B000F5911 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDB9BF2079592B000F5911 /* DetailsViewController.swift */; };
 		56CDB9C220795948000F5911 /* HairViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDB9C120795948000F5911 /* HairViewController.swift */; };
 		56CDB9C420795957000F5911 /* CosmeticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDB9C320795957000F5911 /* CosmeticsViewController.swift */; };
-		56CDB9C6207959AE000F5911 /* CategoryGoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDB9C5207959AE000F5911 /* CategoryGoodsViewController.swift */; };
-		56CDB9C820796521000F5911 /* CategoryGoodsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDB9C720796521000F5911 /* CategoryGoodsCell.swift */; };
+		56CDB9C6207959AE000F5911 /* CategoryProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDB9C5207959AE000F5911 /* CategoryProductsViewController.swift */; };
 		56CDB9CA207965CB000F5911 /* CosmeticsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDB9C9207965CB000F5911 /* CosmeticsCell.swift */; };
 		56CDB9CC207965E0000F5911 /* HairCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDB9CB207965E0000F5911 /* HairCell.swift */; };
+		56CDB9CE20796C27000F5911 /* CategoryProductsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDB9CD20796C27000F5911 /* CategoryProductsCell.swift */; };
+		56CDB9D120796F1A000F5911 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CDB9D020796F1A000F5911 /* Product.swift */; };
 		56EC1CBF207403F200F8E0DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56EC1CBE207403F100F8E0DD /* Main.storyboard */; };
 		56EC1CC420740BBE00F8E0DD /* CustomButton copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC1CC320740BBE00F8E0DD /* CustomButton copy.swift */; };
 		56F6FB832073FF28006DA338 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 56F6FB822073FF28006DA338 /* Assets */; };
@@ -48,10 +49,11 @@
 		56CDB9BF2079592B000F5911 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		56CDB9C120795948000F5911 /* HairViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairViewController.swift; sourceTree = "<group>"; };
 		56CDB9C320795957000F5911 /* CosmeticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmeticsViewController.swift; sourceTree = "<group>"; };
-		56CDB9C5207959AE000F5911 /* CategoryGoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGoodsViewController.swift; sourceTree = "<group>"; };
-		56CDB9C720796521000F5911 /* CategoryGoodsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGoodsCell.swift; sourceTree = "<group>"; };
+		56CDB9C5207959AE000F5911 /* CategoryProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryProductsViewController.swift; sourceTree = "<group>"; };
 		56CDB9C9207965CB000F5911 /* CosmeticsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmeticsCell.swift; sourceTree = "<group>"; };
 		56CDB9CB207965E0000F5911 /* HairCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairCell.swift; sourceTree = "<group>"; };
+		56CDB9CD20796C27000F5911 /* CategoryProductsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryProductsCell.swift; sourceTree = "<group>"; };
+		56CDB9D020796F1A000F5911 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		56EC1CBE207403F100F8E0DD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		56EC1CC320740BBE00F8E0DD /* CustomButton copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CustomButton copy.swift"; sourceTree = "<group>"; };
 		56F6FB822073FF28006DA338 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
@@ -103,8 +105,9 @@
 			children = (
 				5677B5C620741DBF006BE89C /* Utilities */,
 				56EC1CC1207409B400F8E0DD /* Extensions */,
-				56EC1CC220740A4100F8E0DD /* Controllers */,
+				56CDB9CF20796EFA000F5911 /* Model */,
 				56EC1CC02074097500F8E0DD /* Views */,
+				56EC1CC220740A4100F8E0DD /* Controllers */,
 				56F6FB942073FF5B006DA338 /* Animal.swift */,
 				56F6FB902073FF5B006DA338 /* AnimalCell.swift */,
 				56F6FB882073FF5A006DA338 /* AppDelegate.swift */,
@@ -136,12 +139,20 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		56CDB9CF20796EFA000F5911 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56CDB9D020796F1A000F5911 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		56EC1CC02074097500F8E0DD /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				56981BB920742CB5004B8FB7 /* HomeCell.swift */,
-				56CDB9C720796521000F5911 /* CategoryGoodsCell.swift */,
 				56CDB9C9207965CB000F5911 /* CosmeticsCell.swift */,
+				56CDB9CD20796C27000F5911 /* CategoryProductsCell.swift */,
 				56CDB9CB207965E0000F5911 /* HairCell.swift */,
 			);
 			path = Views;
@@ -161,7 +172,7 @@
 				56981BB320742C3F004B8FB7 /* RegistrationViewController.swift */,
 				56CDB9C320795957000F5911 /* CosmeticsViewController.swift */,
 				56CDB9C120795948000F5911 /* HairViewController.swift */,
-				56CDB9C5207959AE000F5911 /* CategoryGoodsViewController.swift */,
+				56CDB9C5207959AE000F5911 /* CategoryProductsViewController.swift */,
 				56CDB9BF2079592B000F5911 /* DetailsViewController.swift */,
 			);
 			name = Controllers;
@@ -246,7 +257,8 @@
 				56F6FBA32073FF5B006DA338 /* Animal.swift in Sources */,
 				56CDB9C420795957000F5911 /* CosmeticsViewController.swift in Sources */,
 				56F6FB972073FF5B006DA338 /* AppDelegate.swift in Sources */,
-				56CDB9C6207959AE000F5911 /* CategoryGoodsViewController.swift in Sources */,
+				56CDB9C6207959AE000F5911 /* CategoryProductsViewController.swift in Sources */,
+				56CDB9CE20796C27000F5911 /* CategoryProductsCell.swift in Sources */,
 				56F6FB9B2073FF5B006DA338 /* ContainerViewController.swift in Sources */,
 				56F6FBA52073FF5B006DA338 /* SidePanelViewControllerDelegate.swift in Sources */,
 				5677B5C820741DCD006BE89C /* Constants.swift in Sources */,
@@ -257,9 +269,9 @@
 				56CDB9C220795948000F5911 /* HairViewController.swift in Sources */,
 				56F6FB9E2073FF5B006DA338 /* RegistrationCell.swift in Sources */,
 				56CDB9C02079592B000F5911 /* DetailsViewController.swift in Sources */,
-				56CDB9C820796521000F5911 /* CategoryGoodsCell.swift in Sources */,
 				56F6FB9D2073FF5B006DA338 /* SidePanelViewController.swift in Sources */,
 				56F6FB982073FF5B006DA338 /* Category.swift in Sources */,
+				56CDB9D120796F1A000F5911 /* Product.swift in Sources */,
 				56F6FBA42073FF5B006DA338 /* CenterViewController.swift in Sources */,
 				56981BBA20742CB5004B8FB7 /* HomeCell.swift in Sources */,
 				56F6FB9F2073FF5B006DA338 /* AnimalCell.swift in Sources */,

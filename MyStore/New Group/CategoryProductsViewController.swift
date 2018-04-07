@@ -8,8 +8,12 @@
 
 import UIKit
 
-class CategoryGoodsViewController: UIViewController {
+class CategoryProductsViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var products = [Product]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

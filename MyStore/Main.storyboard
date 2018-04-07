@@ -46,7 +46,7 @@
                                 <rect key="frame" x="0.0" y="226" width="375" height="397"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeCell" id="xwH-bS-3Nl" customClass="HomeCell" customModule="MyStore" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CosmeticsCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeCell" id="xwH-bS-3Nl" customClass="HomeCell" customModule="MyStore" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xwH-bS-3Nl" id="68A-Ei-CfB">
@@ -123,7 +123,7 @@
                         <outlet property="imageView" destination="5QZ-bA-oHp" id="xCn-vP-0gO"/>
                         <outlet property="tableView" destination="WaG-AD-rAd" id="2gK-AM-yCc"/>
                         <outlet property="titleLabel" destination="RMC-FW-BQ2" id="9an-FH-eW0"/>
-                        <segue destination="kvj-cd-gYR" kind="show" id="n6n-Fn-AVk"/>
+                        <segue destination="kvj-cd-gYR" kind="show" identifier="CenterToCosmeticsSegue" id="n6n-Fn-AVk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -594,7 +594,7 @@
                                 <rect key="frame" x="0.0" y="153" width="375" height="470"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Tu0-Y5-WLE" customClass="CosmeticsCell" customModule="MyStore" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CosmeticsCell" id="Tu0-Y5-WLE" customClass="CosmeticsCell" customModule="MyStore" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tu0-Y5-WLE" id="tLP-Ms-hSa">
@@ -653,6 +653,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="OC8-z7-MFg" id="i9C-3t-dqb"/>
                         <segue destination="vK9-hg-1cj" kind="show" id="DOh-tN-cwh"/>
                     </connections>
                 </viewController>
@@ -676,7 +677,7 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="HrJ-Jc-qmZ" customClass="HairCell" customModule="MyStore" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HairCell" id="HrJ-Jc-qmZ" customClass="HairCell" customModule="MyStore" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HrJ-Jc-qmZ" id="j0k-JM-kEC">
@@ -731,6 +732,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="6hO-F4-0t7" id="jMY-nd-opS"/>
                         <segue destination="vat-m6-B9J" kind="show" id="mup-01-We1"/>
                     </connections>
                 </viewController>
@@ -738,10 +740,10 @@
             </objects>
             <point key="canvasLocation" x="2234" y="699"/>
         </scene>
-        <!--Category Goods View Controller-->
+        <!--Category Products View Controller-->
         <scene sceneID="aTk-GB-izo">
             <objects>
-                <viewController id="vat-m6-B9J" customClass="CategoryGoodsViewController" customModule="MyStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vat-m6-B9J" customClass="CategoryProductsViewController" customModule="MyStore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="V3L-Ha-WSC"/>
                         <viewControllerLayoutGuide type="bottom" id="TX3-SC-DZn"/>
@@ -760,7 +762,7 @@
                                 <rect key="frame" x="0.0" y="101" width="375" height="522"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="90" id="KIs-p9-rE8" customClass="CategoryGoodsCell" customModule="MyStore" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CategoryProductsCell" rowHeight="90" id="KIs-p9-rE8" customClass="CategoryProductsCell" customModule="MyStore" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KIs-p9-rE8" id="7cZ-Eo-vsZ">
@@ -842,6 +844,11 @@
                                                 <constraint firstItem="ygF-Sr-Kyj" firstAttribute="leading" secondItem="Cpe-a4-1W8" secondAttribute="trailing" constant="8" id="qMK-FV-Xr3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="priceLbl" destination="xgn-mN-ZAf" id="lcu-Fa-XcE"/>
+                                            <outlet property="productImage" destination="Cpe-a4-1W8" id="j1N-L2-2tH"/>
+                                            <outlet property="productTitleLbl" destination="ygF-Sr-Kyj" id="zH5-4n-iY5"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -858,6 +865,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="ZMJ-KD-QQu" id="K8L-ge-3gH"/>
                         <segue destination="KLs-7A-zMN" kind="show" id="nma-jM-cab"/>
                     </connections>
                 </viewController>

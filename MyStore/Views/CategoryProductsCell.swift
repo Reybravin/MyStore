@@ -8,8 +8,14 @@
 
 import UIKit
 
-class CategoryGoodsCell: UITableViewCell {
+class CategoryProductsCell: UITableViewCell {
 
+    @IBOutlet weak var productImage: UIImageView!
+    @IBOutlet weak var productTitleLbl: UILabel!
+    @IBOutlet weak var priceLbl: UILabel!
+    
+    var product = Product()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
